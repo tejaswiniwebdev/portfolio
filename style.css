@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #05051a;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(22, 22, 59, 0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.golden-text {
+    color: #ffd700;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/bg.png.png') center/cover;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+.hero h2 {
+    font-size: 2.7rem;
+    line-height: 1.2;
+}
+
+/* --- Common Headings --- */
+.section-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sub-heading {
+    color: #ffd700;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.main-heading {
+    margin-top: 5px;
+}
+
+/* --- About Section --- */
+.about {
+    padding: 60px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #05051a;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin-top: 20px;
+    padding: 0 10%;
+}
+
+.about-left {
+    margin-top: 40px;
+}
+
+.about-left img {
+    width: 300px;
+    height: 330px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    object-fit: cover;
+    border-radius: 15px;
+    box-sizing: 0 10px 25px rgba(0, 0, 0, 0, 5);
+}
+
+.about-right {
+    max-width: 500px;
+}
+
+.about-right h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.about-right p {
+    color: #ccc;
+    font-size: 12px;
+    line-height: 1.8;
+    max-width: 500px;
+
+}
+.hire-button {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 2%;
+  background-color: #f7df1e; /* Bright Yellow/Gold */
+  color: #000; /* Black Text */
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 6px; /* Slightly rounded for a professional look */
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2);
+}
+
+/* Hover Effect: Button thoda bada hoga aur glow karega */
+.hire-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(255, 215, 0, 0.4);
+  background-color: #fff; /* Hover par white color */
+}
+
+
+
+/* --- SKILLS SECTION (Plain Icons, No Boxes) --- */
+.skills {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+}
+
+.skill-item img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.skill-item span {
+    font-size: 0.65rem;
+    color: #aaa;
+    text-transform: uppercase;
+}
+
+.skill-item:hover img {
+    transform: scale(1.1);
+}
+
+/* --- SERVICES SECTION (Small Cards, One Line) --- */
+/* --- Services Section --- */
+/* --- Services Section Fix --- */
+#services {
+    padding: 50px 8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Sab kuch center karega */
+}
+
+.sub-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+    /* Text ko center align karega */
+    width: 100%;
+}
+
+/* Span color (Golden) agar aapne use kiya hai */
+.golden-text {
+    color: #ffd700;
+}
+
+.services-list {
+    display: grid;
+    /* Teeno box barabar space le kar ek line mein aayenge */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    width: 100%;
+
+}
+
+.services-list div {
+    background: #262626;
+    padding: 15px;
+    font-size: 13px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    text-align: left;
+    height: auto;
+    /* Box ke andar ka text left hi rakha hai professional look ke liye */
+}
+
+.services-list div i {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #fff;
+    display: block;
+}
+
+.services-list div h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.services-list div p {
+    color: #ccc;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 11px;
+    display: inline-block;
+}
+
+/* Hover Effect */
+.services-list div:hover {
+    background: #ff004f;
+    transform: translateY(-8px);
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .services-list {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* --- Contact Section Styles --- */
+.contact-section {
+    padding: 80px 10%;
+    background-color: #05051a;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 40px auto 0;
+}
+
+/* Left side info */
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    color: #ffd700;
+    background: rgba(255, 215, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.info-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Right side form */
+.contact-form {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: white;
+    font-size: 0.9rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ffd700;
+}
+
+.submit-btn {
+    background: #ffd700;
+    color: #05051a;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #e6c200;
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
